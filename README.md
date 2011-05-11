@@ -2,7 +2,7 @@
 
 ## Description
 
-The Nginx idempotent module will avoid retying with POST requests.
+The Nginx idempotent module will avoid retrying with POST requests.
 
 ## Installation
 

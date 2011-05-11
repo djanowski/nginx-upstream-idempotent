@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 Jonathan Leibiusky
+ * Copyright (C) 2011 Jonathan Leibiusky, Michel Martens and Damian Janowski
  * Work sponsored by MercadoLibre.com
  *
  * Based on nginx source (C) Igor Sysoev
@@ -95,7 +95,7 @@ static ngx_int_t
 ngx_http_upstream_init_idempotent(ngx_conf_t *cf, ngx_http_upstream_srv_conf_t *us)
 {
     ngx_int_t resp = ngx_http_upstream_init_round_robin(cf, us);
-    
+
     us->peer.init = ngx_http_upstream_init_idempotent_peer;
 
     return resp;
